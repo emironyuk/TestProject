@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="em.jjazz.me" id="e779ba8f-d7aa-476c-a3f8-a7fa5d26c643" keyPath="$USER_HOME$/.ssh/id_rsa" port="22020" nameFormat="DESCRIPTIVE" username="root" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

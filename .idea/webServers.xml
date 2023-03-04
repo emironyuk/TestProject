@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="47556cdf-0fe5-4c15-ab94-879b6d5ef89f" name="prod" url="https://em.jjazz.me">
+        <fileTransfer rootFolder="/var/c1" accessType="SFTP" host="em.jjazz.me" port="22020" sshConfigId="e779ba8f-d7aa-476c-a3f8-a7fa5d26c643" sshConfig="root@em.jjazz.me:22020 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
