@@ -1,0 +1,38 @@
+#https://surrealdb.com/docs/cli/start
+version: "3.9"
+services:
+
+  db:
+    container_name: db
+    image: ${DB_IMAGE}
+    volumes:
+      - ./data:/data
+#    ports:
+#      - "27275:8000"
+    command:
+      - start
+      - --log=warn
+      - --user=${DB_USER}
+      - --pass=${DB_PASS}
+      - file://data/database.db
+    restart: on-failure
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+  node:
+    container_name: node
+    image: ${NODE_IMAGE}
+    working_dir: /home/node
+    command: bash -c "npm install; node index"
+    volumes:
+      - ./prod:/home/node
+    tty: true
+    restart: unless-stopped
+    depends_on:
+      - db
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
