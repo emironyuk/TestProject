@@ -15,6 +15,9 @@ const sendMessage = async () => {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import "assets/style/variables";
+ textarea{
+   background-color: var(--background-color);
+ }
 </style>

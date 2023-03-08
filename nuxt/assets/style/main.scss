@@ -15,8 +15,11 @@ body{
     display: none;
   };
   display: flex;
+  justify-content: center;
   #__nuxt{
     background-color: var(--background-color);
+    width: var(--nuxt-width);
+    padding: 10px;
   };
 }
 h1{

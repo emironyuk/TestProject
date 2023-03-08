@@ -19,9 +19,9 @@
 
 #menu-icon{
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
+  top: 10px;
+  left: calc(50vw + var(--nuxt-width) / 2 - 40px);
+  width: 40px;
+  height: 40px;
 }
 </style>
