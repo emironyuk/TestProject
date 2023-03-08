@@ -5,6 +5,9 @@
     <button @click="sendMessage">Send</button>
   </div>
   <NuxtLink to="/">To Main</NuxtLink>
+  <aside>
+    bla-bla-bla
+  </aside>
 </template>
 
 <script setup lang="ts">
@@ -28,4 +31,19 @@ const sendMessage = async () => {
 .message{
   text-align: right;
 }
+aside{
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: var(--background-color);
+  position: fixed;
+  top: 20px;
+  right: 0;
+}
+@media(min-width: 1200px) {
+  aside{
+    display: block;
+  }
+}
+
 </style>
