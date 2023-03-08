@@ -1,0 +1,16 @@
+body{
+  color-scheme: dark light;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  .hidden{
+    display: none;
+  };
+}
+h1{
+  font-size: 1.3em;
+}
