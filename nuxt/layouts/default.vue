@@ -38,18 +38,17 @@
   }
 }
 .menu{
-  display: none;
   width: 200px;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -250px;
   overflow: auto;
   background-color: var(--background-color);
 }
 @media(min-width: 1200px) {
  .menu{
-   display: block;
+   left: 0;
  }
   #menu-icon{
     display: none;
