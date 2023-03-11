@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg id="menu-icon">
+    <svg id="menu-icon" :class="{open:menuOpen}" @click = "changeMenuState">
       <use href="#svg-menu"/>
     </svg>
     <slot />
@@ -15,6 +15,10 @@
 
 <script setup lang="ts">
   import Menu from "~/components/menu.vue";
+  const menuOpen = ref(false);
+  const changeMenuState = () => {
+    menuOpen.value = !menuOpen.value;
+  }
 </script>
 
 <style scoped lang="scss">
@@ -27,6 +31,10 @@
   height: 40px;
   @media(max-width: 800px) {
     left: 10px;
+  };
+  transition-duration: 500ms;
+  &.open{
+    transform:rotate(90deg);
   }
 }
 .menu{
@@ -47,4 +55,5 @@
     display: none;
   }
 }
+
 </style>
