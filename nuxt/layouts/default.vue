@@ -22,9 +22,12 @@
 #menu-icon{
   position: fixed;
   top: 10px;
-  left: calc(50vw + var(--nuxt-width) / 2 - 40px);
+  right: calc(50vw + var(--nuxt-width) / 2 - 40px);
   width: 40px;
   height: 40px;
+  @media(max-width: 800px) {
+    left: 10px;
+  }
 }
 .menu{
   display: none;
